@@ -1,4 +1,14 @@
-main: SimpleCommands
+name: SimpleCommands
+version: 1.0.0
+main: simplecommands\Main
 api: [5.0.0]
-version: 1.0
 author: albert3_0
+
+permissions:
+  simplecommands:
+    default: false
+    children:
+      simplecommands.alert:
+        default: op
+      simplecommands.discord:
+        default: true
